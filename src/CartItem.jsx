@@ -14,9 +14,9 @@ const CartItem = ({ onContinueShopping }) => {
         const price = parseFloat(item.cost.substring(1));
         const quantity = item.quantity;
         total += price * quantity;
-  });
-  return total;
-};
+    });
+    return total;
+    };
 
   const handleContinueShopping = (e) => {
     onContinueShopping(e);
@@ -87,3 +87,4 @@ const CartItem = ({ onContinueShopping }) => {
 };
 
 export default CartItem;
+
